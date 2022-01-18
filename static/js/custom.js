@@ -74,26 +74,61 @@ $(document).ready(function(){
 		prevText: ' '
   });
   
-   var owl = $("#owl-demo");
+  var owl = $("#owl-demo");
      
-      owl.owlCarousel({
-         
-          itemsCustom : [
-            [0, 1],
-            [450, 1],
-            [600, 2],
-            [640, 1],
-            [667, 1],
-            [1024, 2],
-            [1200, 2],
-            [1600, 2]
-          ],
-          navigation : false,
-		  pagination : true,
-		  
-		 
+	owl.owlCarousel({
+			
+		itemsCustom : [
+			[0, 1],
+			[450, 1],
+			[600, 2],
+			[640, 1],
+			[667, 1],
+			[1024, 2],
+			[1200, 2],
+			[1600, 2]
+		],
+		navigation : false,
+		pagination : true,
+	
+	});
+
+  // var owlCollab = $("#collab-carousel");
      
-      });
+	// $("#collab-carousel").owlCarousel({
+  //   loop:true,
+  //   margin:10,
+  //   nav:true,
+  //   responsive:{
+  //       0:{
+  //           items:1
+  //       },
+  //       600:{
+  //           items:3
+  //       },
+  //   }
+	
+	// });
+
+	var glideCollab = new Glide('#collab-carousel', {
+		type: 'carousel',
+		// autoplay: 4000,
+		focusAt: 'center',
+		perView: 4,
+		breakpoints: {
+			1700: {
+				perView: 3
+			},
+			1024: {
+				perView: 2
+			},
+			600: {
+				perView: 1
+			}
+		}
+	});
+
+	glideCollab.mount()
 
 
 }); 

@@ -98,6 +98,10 @@ time, mark, audio, video {
     background:transparent;
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	font-family: 'Karla', sans-serif;
 	font-weight:400;
@@ -110,8 +114,8 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     color: #23282f;
-    font-family: "Raleway",sans-serif;
-    text-transform: uppercase;
+    /* font-family: "Raleway",sans-serif; */
+    /* text-transform: uppercase; */
 }
 h1 {
     font-size: 36px;
@@ -240,6 +244,7 @@ header {
 }
 .navbar-nav {
 	float:right;
+	flex-direction: unset;
 }
 .nav-outer .container-fluid ,
 .navbar-collapse {
@@ -497,6 +502,19 @@ header {
 }
 .client-section .owl-controls .owl-page.active span, .testimonials-wrapper .owl-controls.clickable .owl-page:hover span {
     background: #ab8ac0 ;
+}
+
+/*==================================*/
+/* 	  Quality standard styles go here	*/
+/*==================================*/
+
+.quality-standards span {
+	display:inline-block;
+	margin-right:30px;
+}
+
+.quality-standards span:nth-child(2) {
+	margin-left: 30px;
 }
 
 /*==================================*/
@@ -862,6 +880,9 @@ footer {
     text-transform: capitalize;
 
 }
+.menu-footer {
+	padding-left: 0px;
+}
 .menu-footer li , .menu-footer label {
 	list-style:none;
 	line-height:30px;
@@ -962,7 +983,7 @@ footer .center p {
 .what-we {
 	float:left;
 	width:100%;
-	padding:50px 0;
+	padding:100px 0;
 }
 .what-we {
 	font-size:14px;
@@ -1911,6 +1932,21 @@ footer {background-size:75px 62px;}
 { padding-left:163px; }
 
 
+
+.quality-standards span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.quality-standards span:nth-child(3){
+	margin-bottom: 0px;
+}
+
+.quality-standards span {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
 	} /* End query */
 	
 @media (max-width:480px){
@@ -2412,7 +2448,7 @@ li img.banner-logo{
 
 @media screen and ( max-width: 767px ){
 	.social-media-wrap{
-		width:192px;
+		width:fit-content;
 		margin:0 auto;
 	}
 
@@ -2480,8 +2516,8 @@ li img.banner-logo{
 
 .bg-lightblue {
 	background-color: #EAF0F8;
-	padding-top: 75px;
-    padding-bottom: 75px;
+	padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .bg-white {
@@ -2489,10 +2525,22 @@ li img.banner-logo{
     padding-bottom: 125px;
 }
 
+.bg-purple {
+	background-color: #8A67B1;
+}
+
+.bg-lightpurple {
+	background-color: #F1EDF5;
+}
+
+.text-white {
+	color: white;
+}
+
 .home-banner {
-	padding-top: 250px;
-    padding-bottom: 100px;
-    display: block;
+	padding-top: 200px;
+  padding-bottom: 100px;
+  display: block;
 }
 
 h1.homeh {
@@ -2503,7 +2551,7 @@ h1.homeh {
 	font-family: 'Roboto Slab', serif!important;
 }
 
-h2.homeh {
+h2.homeh, .h2, p.h2 {
 		text-transform: none!important;
 	line-height: 2.25rem;
 	font-size: 27px!important;
@@ -2528,13 +2576,129 @@ h2.homeh {
 	margin-bottom: 40px;
 	}
 	
-	h2.homeh {
+	h2.homeh, .h2, p.h2 {
 		font-size: 20px!important;
 		line-height: 1.9rem;	
 	}
-	
+	 
 	.bg-white {
 		padding-top:75px;
 		padding-bottom: 75px;
 	}
+}
+
+/* COLLABORATIONS 🤝 */
+
+.collab-items-single {
+	padding-bottom: 20px
+}
+
+.collab-arrow {
+	display: block;
+	margin-left: auto;
+	margin-right: 10px;
+	margin-top: -30px;
+	transition: transform 0.5s;
+
+}
+
+.collab-items-single:hover .collab-arrow {
+	transform: translateX(5px);
+	transition: transform 0.5s;
+}
+
+.carousel-button {
+	background: none;
+	border: none;
+}
+
+.carousel-controls {
+	width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collab-item-info {
+	padding: 0px 20px 20px 20px;
+}
+
+.collab-item-company-name {
+	font-family: "Roboto Slab";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 37px;
+}
+
+.section-padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+.large-section-padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#process {
+	width: 100%;
+	min-height: 25vh;
+	object-fit: cover;
+	margin-bottom: 50px;
+}
+
+.process-heading {
+	/* margin-bottom: 50px; */
+}
+
+.tick-list {
+	list-style: none;
+	padding-left: 0px;
+	line-height: 2;
+}
+
+.tick-list li:before {
+	content: '';
+	background: url(../images/icn_tick.svg);
+	background-size: cover;
+	background-position: center;
+	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+}
+
+.tick-list li {
+	padding-left: 0px;
+}
+
+p, .p {
+	font-size: 1.0625rem;
+	line-height: 23px;
+}
+
+.what-we {
+		padding: 50px 0px
+}
+
+.collaborations-lynee-image-col {
+	margin-top: 58px;
+}
+
+@media  ( min-width: 768px){
+
+	.large-section-padding {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.what-we {
+		padding: 100px 0px
+	}
+
+	.collaborations-lynee-image-col {
+		margin-top: 0px;
+	}
+
 }

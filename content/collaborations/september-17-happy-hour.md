@@ -1,5 +1,5 @@
 ---
-title: 'Business Strategy and Risk Workshops '
+title: 'Collab example 3'
 date: '2021-12-15T14:15:51+00:00'
 draft: false
 company:

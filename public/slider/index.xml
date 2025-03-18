@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sliders on Continua Solutions LLC</title>
+    <link>//localhost:50535/slider/</link>
+    <description>Recent content in Sliders on Continua Solutions LLC</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 10:14:54 +0000</lastBuildDate>
+    <atom:link href="//localhost:50535/slider/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plant</title>
+      <link>//localhost:50535/slider/plant/</link>
+      <pubDate>Mon, 25 Sep 2017 10:14:54 +0000</pubDate>
+      <guid>//localhost:50535/slider/plant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pipes2</title>
+      <link>//localhost:50535/slider/pipes2/</link>
+      <pubDate>Mon, 25 Sep 2017 10:13:39 +0000</pubDate>
+      <guid>//localhost:50535/slider/pipes2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pipes</title>
+      <link>//localhost:50535/slider/pipes/</link>
+      <pubDate>Mon, 25 Sep 2017 10:12:50 +0000</pubDate>
+      <guid>//localhost:50535/slider/pipes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Derek2</title>
+      <link>//localhost:50535/slider/derek2/</link>
+      <pubDate>Mon, 25 Sep 2017 10:11:40 +0000</pubDate>
+      <guid>//localhost:50535/slider/derek2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>derek</title>
+      <link>//localhost:50535/slider/derek/</link>
+      <pubDate>Mon, 25 Sep 2017 10:08:42 +0000</pubDate>
+      <guid>//localhost:50535/slider/derek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Updated</title>
+      <link>//localhost:50535/slider/environmental/</link>
+      <pubDate>Thu, 24 Aug 2017 14:54:25 +0000</pubDate>
+      <guid>//localhost:50535/slider/environmental/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
